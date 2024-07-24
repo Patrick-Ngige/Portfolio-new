@@ -21,7 +21,7 @@
     --biggest-font-size: 2.5rem;
     --h1-font--size: 1.75rem;
     --h2-font-size: 1.25rem;
-    --h3-fonr-size: 1.125rem;
+    --h3-font-size: 1.125rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
@@ -89,8 +89,8 @@ img {
 
         /* REUSABLE CSS CLASSES */
 .container {
-    min-width: 1120px;
-    margin-inline: 1.5rem;
+    min-width: 375px;
+    padding: 1.5rem;
 }
 
 .grid {
@@ -121,7 +121,7 @@ img {
     content: "";
     width: 40px;
     height: 28px;
-    background-color: hsl(14, 98%, 50%, .2);
+    background-color: hsla(14, 98%, 50%, .2);
     position: absolute;
     top: -4px;
     right: -8px;
@@ -177,6 +177,7 @@ img {
 .nav__logo {
     display: flex;
     align-items: center;
+    /* flex-direction: column; */
     column-gap: .5rem;
     font-weight:  var(--font-semi-bold);
     color: var(--title-color);
@@ -199,4 +200,105 @@ img {
 .nav__toggle {
     font-size: 1.25rem;
     cursor: pointer;
+}
+
+
+        /* NAV FOR MOBILE */
+
+@media screen and (max-width: 768px) {
+    .nav__menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        background-color: hsla(0, 0%, 0%, .75);
+        width: 100%;
+        padding-block: 1.8rem 5rem;
+        text-align: center;
+        backdrop-filter: blur(8px);
+        transition: top .4s ease-in;
+    }
+}
+
+.nav__title,
+.nav__name,
+.nav__close{
+    color: var(--white-color);
+}
+
+.nav__title {
+    display: block;
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 3.5rem;
+}
+
+.nav__name {
+    position: relative;
+    width: max-content;
+    margin: 0 auto 3rem;
+    font-size: var(--h2-font-size);
+}
+
+.nav__name::after,
+.nav__name::before {
+    content: "";
+    width: 40px;
+    height: 1px;
+    background-color: var(--text-color-light);
+    position: absolute;
+    top: 50%;
+    left: -4rem;
+}
+
+.nav__name::before {
+    left: initial;
+    right: -4rem;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+.nav__link {
+    position: relative;
+    color: var(--text-color-light);
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    transition: color .3s;
+}
+
+.nav__link::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 0;
+    bottom: -0.5em;
+    transition: width .3s;
+}
+
+ .nav__link:hover {
+ color: var(--white-color);
+}
+
+.nav__link:hover::after {
+    width: 25%;
+} 
+
+.nav__close {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+}
+
+
+/* showing the menu  */
+
+.show-menu {
+    top: 0;
 }
