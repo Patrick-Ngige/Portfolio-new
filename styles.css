@@ -450,3 +450,47 @@ img {
         opacity: 0;
     }
 }
+
+
+/* ======== ABOUT ME ==========  */
+.about {
+    background-color: var(--container-color);
+    transition: background-color .4s;
+}
+
+.about__container {
+    row-gap: 0;
+}
+
+.about__perfil {
+    position: relative;
+    justify-self: center;
+    margin-block: 2.5rem 4.5rem;
+}
+
+.about__pic {
+    width: 220px;
+}
+
+.about__image {
+    position: relative;
+    border: 4px solid var(--white-color);
+    z-index: 1;
+}
+
+.about__shadow,
+.about__line,
+.about__box {
+    position: absolute;
+}
+
+.about__shadow {
+    width: 150px;
+    height: 385px;
+    background-color: var(--body-color);
+    top: -2.5rem;
+    right: -3.5rem;
+    border-bottom: 4px solid var(--first-color);
+    transition: background-color .4s;
+    z-index: -1;
+}
