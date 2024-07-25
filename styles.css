@@ -342,11 +342,12 @@ img {
     transition: background-color .4s;
 }
 
-.home__arrow,.home__line {
+.home__arrow,
+.home__line {
     position: absolute;
     filter: invert(1);
     width: 50px;
-    height: 50px;
+    height: 60px;
     transition: filter .4s;
 } 
 
@@ -356,7 +357,7 @@ img {
 }
 
 .home__line {
-    right: -2rem;
+    right: -7.5rem;
     bottom: -0.5rem;
 }
 
@@ -366,6 +367,13 @@ img {
     z-index: 10;
 }
 
-.home_social {
-    
+.home__social {
+    height: max-content;
+    position: absolute;
+    left: -3rem;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    display: grid;
+    row-gap: 1rem;
 }
