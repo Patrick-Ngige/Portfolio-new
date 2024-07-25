@@ -401,3 +401,30 @@ img {
                 hsla(190, 90%, 40%, 0.3),
                   hsla(190, 98%, 40%, 0));
 }
+
+.home__scroll {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.home__scroll-text {
+    display: none;
+}
+
+.home__scroll-box {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color .4s;
+}
+
+.home__scroll-box i {
+    animation: scroll-down 3s infinite;
+}
