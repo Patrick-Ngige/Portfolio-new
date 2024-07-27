@@ -94,17 +94,27 @@ const navClose = document.getElementById('nav-close');
     window.addEventListener('scroll', scrollUp);
 
 
-    // const handleScroll = () => {
-    //     const scrollUpButton = document.getElementById('scroll-up');
-    //     const scrollThreshold = 350;
-    
-    //     if (window.scrollY >= scrollThreshold) {
-    //         scrollUpButton.classList.add('show-scroll');
-    //     } else {
-    //         scrollUpButton.classList.remove('show-scroll');
-    //     }
-    // };
-    
-    // // Listen for scrolls (throttled for performance)
-    // window.addEventListener('scroll', handleScroll, { passive: true });
+//  ========== SCROLL SECTIONS ACTIVE LINK =============
+
+const sections = decument.querySelectorAll('section[id]');
+
+
+const scrollActive = () => {
+    const scrollDown = window.scrollY;
+
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 58;
+        const sectionId = current.getAttribute('id');
+        const sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']');
+
+        if ( scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight ) {
+            sectionsClass.classList.add('active-link');
+        } else {
+            sectionsClass.classList.remove('active-link');
+        }
+    })
+}
+
+window.addEventListener('scroll', scrollActive);
     
