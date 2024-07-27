@@ -13,12 +13,7 @@ const navClose = document.getElementById('nav-close');
         navToggle.addEventListener('click', () => {
             navMenu.classList.add('show-menu');
         })
-    }
-
-
-    // HIDE MENU 
-
-    if ( navClose ) {
+    } else if ( navClose ) {
         navClose.addEventListener('click', () => {
             navMenu.classList.remove('show-menu');
         })
