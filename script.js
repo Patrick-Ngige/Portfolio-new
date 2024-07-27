@@ -80,3 +80,31 @@ const navClose = document.getElementById('nav-close');
     } 
 
     contactForm.addEventListener('submit', sendEmail);
+
+
+    // =========== SHOW SCROLL UP BUTTON ==========
+    const scrollUp = () => {
+        const scrollUp = document.getElementById('scroll-up')
+
+        //when the scroll is higher than the 350 viewport height, add the 
+        this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                            : scrollUp.classList.remove('show-scroll');
+    }
+    
+    window.addEventListener('scroll', scrollUp);
+
+
+    // const handleScroll = () => {
+    //     const scrollUpButton = document.getElementById('scroll-up');
+    //     const scrollThreshold = 350;
+    
+    //     if (window.scrollY >= scrollThreshold) {
+    //         scrollUpButton.classList.add('show-scroll');
+    //     } else {
+    //         scrollUpButton.classList.remove('show-scroll');
+    //     }
+    // };
+    
+    // // Listen for scrolls (throttled for performance)
+    // window.addEventListener('scroll', handleScroll, { passive: true });
+    
