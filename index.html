@@ -472,6 +472,8 @@
                         <label for="message" class="contact__label">Message</label>
                     </div>
 
+                    <p class="contact__message" id="contact-message"></p>
+
                     <button class="contact__button button">
                         <i class="ri-send-plane-line">
                             Send Message
@@ -486,7 +488,7 @@
                 <div class="contact__social-data">
                     <div>
                         <p class="contact__social-description-1">
-                            Does not send emails
+                            Does not send emails?
                         </p>
 
                         <p class="contact__social-description-2">
@@ -514,7 +516,12 @@
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <!-- =========== EMAIL JS ===========  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="script.js" type="module"></script>
+
 </body>
 
 </html>
