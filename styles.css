@@ -1117,3 +1117,26 @@ body.dark-theme {
 .show-scroll {
     bottom: 3rem;
 }
+
+
+
+/* =================  MEDIA QUERIES ================= */
+
+/* for small devices */
+@media screen and (max-width: 340px) {
+    .container {
+        margin-inline: 1rem;
+    }
+
+    .home__image {
+        width: 180px;
+    }
+
+    .about__image{
+        width: 180px;
+
+.about__shadow{
+    height: 330px;
+    right: -2.5rem;
+}    }
+}
