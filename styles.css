@@ -1455,4 +1455,10 @@ body.dark-theme {
     .services__card:hover .services__border {
         transform: translate(1.25rem, 1.25rem);
     }
+
+
+    .projects__container {
+        grid-template-columns: repeat(3, 352px);
+        padding-block: 3rem 1rem;
+    }
 }
