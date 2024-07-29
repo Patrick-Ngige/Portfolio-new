@@ -1149,3 +1149,21 @@ body.dark-theme {
         transform: translate(0);
     }
 }
+
+
+/* for medium devices */
+@media screen and (min-width: 576px) {
+    .home__container,
+    .about__container,
+    .projects__container
+    {
+        grid-template-columns: 350px;
+        justify-content: center;
+    }
+
+    .contact__data {
+        width: 350px;
+        padding: 4rem 1.5rem;
+        margin-inline: auto;
+    }
+}
