@@ -1308,4 +1308,22 @@ body.dark-theme {
         margin-bottom: 5.5rem;
         padding-left: 3rem;
     }
+    .home__description::after {
+        content: '';
+        width: 32px;
+        height: 2px;
+        background-color: var(--title-color);
+        position: absolute;
+        left: 0;
+        top: 14px;
+    }
+    .home__scroll {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        column-gap: .75rem;
+    }
+    .home__scroll-text {
+        display: block;
+    }
 }
