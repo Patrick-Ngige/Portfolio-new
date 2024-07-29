@@ -1384,4 +1384,13 @@ body.dark-theme {
         right: -5.5rem;
         border-bottom: 6px solid var(--first-color);
     }
+    .about__perfil .geometric-box {
+        right: -4rem;
+        top: 4.5rem;
+    }
+    .about__line {
+        width: 80px;
+        right: -2rem;
+        top: 10rem;
+    }
 }
