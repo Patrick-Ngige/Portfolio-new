@@ -1286,4 +1286,26 @@ body.dark-theme {
     .home__image {
         width: 350px;
     }
+    .home__shadow {
+        right: -1.25rem;
+        bottom: -1.25rem;
+        border: 6px solid var(--black-color);
+    }
+    .home__name,
+    .home__description {
+        text-align: initial;
+    }
+    .home__name {
+        align-self: flex-end;
+    }
+    .home__info {
+        margin-top: 0;
+        align-self: flex-start;
+    }
+    .home__description {
+        position: relative;
+        font-size: var(--h2-font-size);
+        margin-bottom: 5.5rem;
+        padding-left: 3rem;
+    }
 }
