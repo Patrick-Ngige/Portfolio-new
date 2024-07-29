@@ -67,6 +67,7 @@ body {
     background-color: var(--body-color);
     color: var(--text-color);
     transition: background-color .4s;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -1134,9 +1135,17 @@ body.dark-theme {
 
     .about__image{
         width: 180px;
+    }
+    .about__shadow{
+        height: 330px;
+        right: -2.5rem;
+    }
 
-.about__shadow{
-    height: 330px;
-    right: -2.5rem;
-}    }
+    .contact__data {
+        width: 100%;
+    }
+
+    .contact__data .section__title-2 {
+        transform: translate(0);
+    }
 }
