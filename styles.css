@@ -1166,6 +1166,10 @@ body.dark-theme {
         padding: 4rem 1.5rem;
         margin-inline: auto;
     }
+    .contact__container {
+        grid-template-columns: 500px;
+        justify-content: center;
+    }
     .contact__group {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 1rem;
@@ -1184,5 +1188,16 @@ body.dark-theme {
     }
     .dark-theme .contact__social-arrow {
         filter: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .services__container {
+        grid-template-columns: repeat(2, 300px);
+        /* column-gap: 3rem; */
+    }
+
+    .projects__container {
+        grid-template-columns: repeat(2, 350px);
     }
 }
