@@ -67,7 +67,7 @@ body {
     background-color: var(--body-color);
     color: var(--text-color);
     transition: background-color .4s;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 h1, h2, h3, h4 {
@@ -164,8 +164,9 @@ body.dark-theme {
 
         /*=========== REUSABLE CSS CLASSES =============*/
 .container {
-    min-width: 375px;
+    min-width: 1150px;
     padding: 1.5rem;
+    
 }
 
 .grid {
@@ -252,7 +253,7 @@ body.dark-theme {
 .nav__logo {
     display: flex;
     align-items: center;
-    /* flex-direction: column; */
+    flex-direction: column;
     column-gap: .5rem;
     font-weight:  var(--font-semi-bold);
     color: var(--title-color);
@@ -280,7 +281,7 @@ body.dark-theme {
 
         /* NAV FOR MOBILE */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1150px) {
     .nav__menu {
         position: fixed;
         top: -100%;
