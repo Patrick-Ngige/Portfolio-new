@@ -1480,4 +1480,9 @@ body.dark-theme {
         grid-template-rows: initial;
         padding-bottom: 2rem;
     }
+    .contact__mail {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        padding: 4.5rem 2.5rem ;
+    }
 }
