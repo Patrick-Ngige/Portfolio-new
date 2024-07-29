@@ -1374,4 +1374,14 @@ body.dark-theme {
     .about__image {
         width: 350px;
     }
+    .about__pic {
+        border: 8px solid var(--white-color);
+    }
+    .about__shadow {
+        width: 240px;
+        height: 615px;
+        top: -4rem;
+        right: -5.5rem;
+        border-bottom: 6px solid var(--first-color);
+    }
 }
