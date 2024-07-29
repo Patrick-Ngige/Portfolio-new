@@ -1166,4 +1166,23 @@ body.dark-theme {
         padding: 4rem 1.5rem;
         margin-inline: auto;
     }
+    .contact__group {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+    }
+    .contact__social{
+        background-color: transparent;
+    }
+    .contact__social-arrow{
+        filter: invert();
+    }
+    .contact__social-description-1{
+        color: var(--text-color);
+    }
+    .contact__social-description-2{
+        color: var(--title-color);
+    }
+    .dark-theme .contact__social-arrow {
+        filter: none;
+    }
 }
