@@ -1,5 +1,3 @@
-// import { API_KEY, serviceID } from "./config";
-
    // SHOWING HIDDEN NAV 
 
 const navMenu = document.getElementById('nav-menu');
