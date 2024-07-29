@@ -1349,6 +1349,7 @@ body.dark-theme {
         left: -20rem;
         bottom: 4rem;
         width: 120px;
+        height: 100px;
         rotate: 30deg;
     }
     .home__social {
@@ -1389,8 +1390,26 @@ body.dark-theme {
         top: 4.5rem;
     }
     .about__line {
-        width: 80px;
-        right: -2rem;
+        width: 150px;
+        height: 100px;
+        right: -11rem;
         top: 10rem;
+    }
+    .about__box {
+        width: 64px;
+        height: 64px;
+        right: -.75rem;
+    }
+    .about__container .section__title-1 {
+        align-self: flex-end;
+        margin-inline: 0;
+    }
+    .about__info {
+        align-self: flex-start;
+        padding-left: 3rem;
+    }
+    .about__description {
+        font-size: var(--h2-font-size);
+        margin-bottom: 2rem;
     }
 }
