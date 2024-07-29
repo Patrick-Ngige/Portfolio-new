@@ -1540,4 +1540,9 @@ body.dark-theme {
         column-gap: 3rem;
         order: 1;
     }
+    .scrollup {
+        right: 3rem;
+        width: 30px;
+        height: 30px;
+    }
 }
