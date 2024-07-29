@@ -1359,4 +1359,19 @@ body.dark-theme {
         font-size: 1.5rem;
         padding: 0.5rem;
     }
+
+
+    .about__container {
+        grid-template-columns: 440px 525px;
+        gap: 1rem 9rem;
+        align-items: center;
+        padding-block: 1rem;
+    }
+    .about__perfil {
+        order: -1;
+        grid-row: 1 / 3;
+    }
+    .about__image {
+        width: 350px;
+    }
 }
