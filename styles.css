@@ -1336,4 +1336,27 @@ body.dark-theme {
     .home__scroll-box i{
         font-size: 1.25rem;
     }
+    .home__perfil .geometric-box {
+        top: 15rem;
+    }
+    .home__arrow {
+        top: 4.5rem;
+        left: -16rem;
+        rotate: 80deg;
+        width: 150px;
+    }
+    .home__line {
+        left: -20rem;
+        bottom: 4rem;
+        width: 120px;
+        rotate: 30deg;
+    }
+    .home__social {
+        left: initial;
+        right: -6rem;
+    }
+    .home__social-link {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
 }
