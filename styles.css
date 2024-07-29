@@ -1527,4 +1527,7 @@ body.dark-theme {
     .contact__message {
         bottom: -2.5rem;
     }
+    .dark-theme .contact__data {
+        box-shadow: 4px 0 8px hsla(0, 0%, 4%, .3);
+    }
 }
