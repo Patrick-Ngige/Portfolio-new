@@ -163,7 +163,7 @@ body.dark-theme {
 
         /*=========== REUSABLE CSS CLASSES =============*/
 .container {
-    min-width: 1150px;
+    min-width: 1120px;
     padding: 1.5rem;
 }
 
@@ -1126,6 +1126,7 @@ body.dark-theme {
 @media screen and (max-width: 340px) {
     .container {
         margin-inline: 1rem;
+    
     }
 
     .home__image {
@@ -1139,6 +1140,11 @@ body.dark-theme {
         height: 330px;
         right: -2.5rem;
     }
+
+    .projects__img {
+        width: 50% !important;
+    }
+    
 
     .contact__data {
         width: 100%;
