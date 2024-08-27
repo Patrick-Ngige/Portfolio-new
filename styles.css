@@ -1252,6 +1252,8 @@ body.dark-theme {
         transform: scale(1.2);
     }
 
+    /* Navigation  */
+
     .nav {
         height: calc(var(--header-height) + 2rem);
         column-gap: 4rem;
