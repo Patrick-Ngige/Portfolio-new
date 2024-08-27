@@ -279,10 +279,10 @@ body.dark-theme {
 
         /* NAV FOR MOBILE */
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 1150px) {
     .nav__menu {
         position: fixed;
-        top: -100%;
+        top: -120%;
         left: 0;
         background-color: hsla(0, 0%, 0%, .75);
         width: 100%;
@@ -345,7 +345,6 @@ body.dark-theme {
 
 .nav__link::after {
     content: "";
-    width: 0;
     height: 2px;
     background-color: var(--white-color);
     position: absolute;
@@ -1223,9 +1222,6 @@ body.dark-theme {
         /* column-gap: 3rem; */
     }
 
-    .nav__menu {
-        visibility: hidden;
-    }
 
     .projects__container {
         grid-template-columns: repeat(2, 350px);
