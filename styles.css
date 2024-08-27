@@ -1303,6 +1303,8 @@ body.dark-theme {
         color: var(--title-color);
     }
 
+    /* home  */
+
     .home__container {
         grid-template-columns: repeat(2, 460px);
         gap: 2rem 4rem;
