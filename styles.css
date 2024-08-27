@@ -1265,7 +1265,7 @@ body.dark-theme {
         padding: 1.1rem 1.5rem;
     }
     .nav__link-button:hover {
-        color: var(--white-color);
+        color: var(--first-color);
     }
     .nav__link-button::after {
         background-color: transparent;
