@@ -1488,6 +1488,7 @@ body.dark-theme {
         transform: translate(1.25rem, 1.25rem);
     }
 
+    /* projects  */
 
     .projects__container {
         grid-template-columns: repeat(3, 352px);
