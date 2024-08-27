@@ -1463,6 +1463,7 @@ body.dark-theme {
         font-size: 1.5rem;
     }
 
+    /* services  */
 
     .services__container {
         grid-template-columns: repeat(3, 290px);
