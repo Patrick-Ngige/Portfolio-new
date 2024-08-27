@@ -1130,6 +1130,16 @@ body.dark-theme {
         overflow-x: hidden;
     }
 
+    .header {
+        width: 100%;
+        position: relative;
+        overflow-y: hidden;
+        /* margin: 0; */
+    }
+
+    .scrollup {
+        right: 4rem;
+    }
 
     .home__image {
         width: 180px;
@@ -1212,6 +1222,10 @@ body.dark-theme {
     .services__container {
         grid-template-columns: repeat(2, 300px);
         /* column-gap: 3rem; */
+    }
+
+    .nav__menu {
+        visibility: hidden;
     }
 
     .projects__container {
