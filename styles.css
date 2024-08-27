@@ -1565,6 +1565,8 @@ body.dark-theme {
         box-shadow: 4px 0 8px hsla(0, 0%, 4%, .3);
     }
 
+    /* footer  */
+
     .footer__container {
         padding-block: 4rem;
         grid-template-columns: repeat(2, max-content);
