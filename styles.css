@@ -1391,6 +1391,8 @@ body.dark-theme {
         padding: 0.5rem;
     }
 
+    /* about  */
+
     .about__container {
         grid-template-columns: 440px 525px;
         gap: 1rem 9rem;
@@ -1460,6 +1462,7 @@ body.dark-theme {
     .button__ghost i {
         font-size: 1.5rem;
     }
+
 
     .services__container {
         grid-template-columns: repeat(3, 290px);
