@@ -1507,6 +1507,7 @@ body.dark-theme {
         right: 1.25rem;
     }
 
+    /* contact  */
 
     .contact__container {
         grid-template-columns: 440px 670px;
