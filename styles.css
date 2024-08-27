@@ -1391,7 +1391,6 @@ body.dark-theme {
         padding: 0.5rem;
     }
 
-
     .about__container {
         grid-template-columns: 440px 525px;
         gap: 1rem 9rem;
