@@ -1125,8 +1125,7 @@ body.dark-theme {
 /* for small devices */
 @media screen and (max-width: 340px) {
     .container {
-        margin-inline: 1rem;
-    
+        /* margin-inline: 1rem; */
     }
 
     .home__image {
@@ -1141,10 +1140,13 @@ body.dark-theme {
         right: -2.5rem;
     }
 
-    .projects__img {
-        width: 50% !important;
+    .projects__cards {
+        width: 310px;
     }
-    
+
+    .projects__image {
+        width: 280px !important;
+    }
 
     .contact__data {
         width: 100%;
@@ -1436,7 +1438,6 @@ body.dark-theme {
     .button__ghost i {
         font-size: 1.5rem;
     }
-
 
     .services__container {
         grid-template-columns: repeat(3, 290px);
