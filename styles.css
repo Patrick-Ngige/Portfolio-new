@@ -163,7 +163,7 @@ body.dark-theme {
 
         /*=========== REUSABLE CSS CLASSES =============*/
 .container {
-    min-width: 1120px;
+    /* min-width: 1120px; */
     padding: 1.5rem;
 }
 
@@ -1125,20 +1125,73 @@ body.dark-theme {
 /* for small devices */
 @media screen and (max-width: 340px) {
     .container {
-        /* margin-inline: 1rem; */
+        margin-inline: 1rem;
+        /* max-width: 320px; */
+    }
+
+    .home__name {
+        text-align: start;
+
+    }
+
+    .home__perfil {
+        position: relative;
+        justify-self: start;
     }
 
     .home__image {
         width: 180px;
     }
 
+    .home__info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+
+    .home__description {
+        width: 280px;
+    }
+
     .about__image{
         width: 180px;
+    }
+
+    .about__container {
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section__title-1 {
+        margin: 0;
+    }
+
+    .services__container .container {
+        max-width: 320px;
+    }
+
+    .about__perfil {
+        justify-self: start;
+    }
+
+    .about__info {
+        max-width: 300px;
+        padding: 10px;
     }
     .about__shadow{
         height: 330px;
         right: -2.5rem;
     }
+
+    .services__container {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+    }
+
+
 
     .projects__cards {
         width: 310px;
