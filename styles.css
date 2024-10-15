@@ -1568,7 +1568,7 @@ body.dark-theme {
     /* footer  */
 
     .footer__container {
-        padding-block: 4rem;
+        padding-block: 2rem;
         grid-template-columns: repeat(2, max-content);
         justify-content: space-between;
     }
