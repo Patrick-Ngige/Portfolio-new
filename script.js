@@ -158,3 +158,36 @@ root.style.setProperty("--marquee-elements", marqueeContent.children.length);
 for(let i=0; i<marqueeElementsDisplayed; i++) {
   marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
 }
+
+
+// $$$$$$$$$ ANIMATING THE SERVICES SECTION
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const serviceSection = document.querySelector('.service');
+    const serviceCards = document.querySelectorAll('.services__card');
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          serviceSection.style.opacity = '1';
+          serviceCards.forEach((card, index) => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+            card.style.transitionDelay = `${index * 0.3}s`;
+          });
+          observer.unobserve(serviceSection);
+        }
+      });
+    }, observerOptions);
+
+    observer.observe(serviceSection);
+  });
+
+
+
