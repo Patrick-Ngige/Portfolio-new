@@ -53,7 +53,7 @@ const navClose = document.getElementById('nav-close');
         e.preventDefault();
 
         // serviceID - templateID - #form - publicKey
-        emailjs.sendForm('service_0gu7r8v','template_3ypmkyb','#contact-form', 'Q0tB-gMsrTiO_0G27')
+        emailjs.sendForm('service_0gu7r8v','template_3ypmkyb',contactForm, 'Q0tB-gMsrTiO_0G27')
         .then(() => {
             //show sent message if successful
             contactMessage.textContent = 'Message sent successfully ✅';
@@ -69,7 +69,7 @@ const navClose = document.getElementById('nav-close');
 
         }, () => {
             //show error message
-            contactForm.textContent = "Message not sent (service error) ❌";
+            contactMessage.textContent = "Message not sent (service error) ❌";
         
         }); 
     } 
