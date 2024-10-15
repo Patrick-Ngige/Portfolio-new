@@ -675,7 +675,7 @@ body.dark-theme {
 .about__list {
     list-style: square;
     color: var(--title-color);
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
 }
 
 .about__buttons {
@@ -1593,7 +1593,7 @@ body.dark-theme {
 
 
 
-/* $$$$$$$$ AURORA  */
+/* $$$$$$$$ MARQUEE INTEGRATION  */
   
   .marquee {
     width: var(--marquee-width);
