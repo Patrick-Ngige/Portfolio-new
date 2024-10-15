@@ -161,33 +161,39 @@ for(let i=0; i<marqueeElementsDisplayed; i++) {
 
 
 // $$$$$$$$$ ANIMATING THE SERVICES SECTION
-
   document.addEventListener('DOMContentLoaded', function() {
-    const serviceSection = document.querySelector('.service');
-    const serviceCards = document.querySelectorAll('.services__card');
+    const animateSection = (sectionSelector, cardSelector, animationName) => {
+      const section = document.querySelector(sectionSelector);
+      const cards = document.querySelectorAll(cardSelector);
 
-    const observerOptions = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.1
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            section.style.opacity = '1';
+            cards.forEach((card, index) => {
+              card.style.opacity = '1';
+              card.style.transform = 'translateY(0)';
+              card.style.animation = `${animationName} 2s ease forwards ${index * 0.3}s`;
+            });
+            observer.unobserve(section); 
+          }
+        });
+      }, observerOptions);
+
+      observer.observe(section);
     };
 
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          serviceSection.style.opacity = '1';
-          serviceCards.forEach((card, index) => {
-            card.style.opacity = '1';
-            card.style.transform = 'translateY(0)';
-            card.style.transitionDelay = `${index * 0.3}s`;
-          });
-          observer.unobserve(serviceSection);
-        }
-      });
-    }, observerOptions);
-
-    observer.observe(serviceSection);
+    animateSection('.projects', '.projects__cards', 'slideDown');
+    animateSection('.service', '.services__card', 'slideIn');
   });
+
+
 
 
 

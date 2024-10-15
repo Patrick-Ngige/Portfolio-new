@@ -785,11 +785,29 @@ body.dark-theme {
 /* ======== PROJECTS ===========  */
 
 /* #### ADDING ANIMATION */
+
+@keyframes slideDown {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .projects__card {
+    opacity: 0; 
+    transform: translateY(-50px);
+    transition: opacity 2s ease, transform 2s ease;
+  }
+  
   
 
 .projects {
     background-color: var(--container-color);
-    transition: background-color .4s;
+    transition: background-color 2s;
 }
 
 .projects__container {
