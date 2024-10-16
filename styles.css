@@ -792,7 +792,49 @@ body.dark-theme {
 
 /* ======== PROJECTS ===========  */
 
+
+/* ######## ADDING FILTERS */
+
+.button-1 {
+    display: inline-block;
+    padding: 0.5em 1.0em;
+    border-radius: 4px;
+    background: var(--black-color);
+    color: var(--white-color);
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    border: unset;
+    margin: 10px;
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    transition: background 0.3s;
+  }
+  
+  .button-1:hover {
+    background-color: var(--first-color);
+    color: #fff;
+  }
+  
+  .button-1:active,
+  .button-1.is-checked {
+    background-color: #326CEC;
+    outline: none;
+  }
+  
+  .button-group {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .button-group:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
 /* #### ADDING ANIMATION */
+
 
 @keyframes slideDown {
     from {
