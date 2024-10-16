@@ -798,7 +798,6 @@ body.dark-theme {
 .button-1 {
     display: inline-block;
     padding: 0.5em 1.0em;
-    border-radius: 4px;
     background: var(--black-color);
     color: var(--white-color);
     font-family: sans-serif;
