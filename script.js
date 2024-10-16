@@ -194,6 +194,33 @@ for(let i=0; i<marqueeElementsDisplayed; i++) {
   });
 
 
+  // $$$$$$$$$$$$$$$$ PROJECTS CATEGORIES
+
+  // ####
+//         GALLERY 2
+// ####
+
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.button-1');
+  const articles = document.querySelectorAll('#grid-container article');
+
+  buttons.forEach(button => {
+      button.addEventListener('click', () => {
+          buttons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+
+          const filter = button.dataset.filter;
+          articles.forEach(article => {
+              if (article.matches(filter)) {
+                  article.style.display = 'block';
+              } else {
+                  article.style.display = 'none';
+              }
+          });
+      });
+  });
+});
+
 
 
 

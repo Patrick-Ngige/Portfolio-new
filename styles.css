@@ -832,6 +832,14 @@ body.dark-theme {
     clear: both;
   }
 
+  /* .grid article {
+    display: flex;
+    flex-direction:row;
+    float: left;
+    margin: .5rem;
+    width: 28%;
+  } */
+
 /* #### ADDING ANIMATION */
 
 
