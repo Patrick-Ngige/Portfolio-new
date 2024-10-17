@@ -409,6 +409,27 @@ body.dark-theme {
 
 /* =========== HOME ============ */
 
+.home__name, .home__image img, .home__scroll-box, .home__social-link, .home__description {
+    opacity: 0;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes rotateIn {
+    from { opacity: 0; transform: rotate(-180deg); }
+    to { opacity: 1; transform: rotate(0); }
+  }
+  
+  
+
 .home__container {
     padding-top: 2rem;
 }
@@ -501,7 +522,7 @@ body.dark-theme {
 
 .home__description b {
     background: linear-gradient(90deg,
-    hsla(14, 90%, 50%, .95),
+    hsla(14, 90%, 70%, .90),
     hsla(14, 80%, 50%, 0) ) ;
 }
 
@@ -1453,7 +1474,7 @@ body.dark-theme {
     }
     .home__description {
         position: relative;
-        font-size: var(--h2-font-size);
+        font-size: var(--h3-font-size);
         margin-bottom: 5.5rem;
         padding-left: 3rem;
     }
@@ -1559,7 +1580,7 @@ body.dark-theme {
         padding-left: 3rem;
     }
     .about__description {
-        font-size: var(--h2-font-size);
+        font-size: var(--h3-font-size);
         margin-bottom: 2rem;
     }
     .about__description::after {

@@ -43,6 +43,39 @@ const navClose = document.getElementById('nav-close');
     window.addEventListener('scroll', shadowHeader);
 
 
+
+    // $$$$$$$$$$$$$$ ANIMATING THE HOME SECTION 
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const homeName = document.querySelector('.home__name');
+        const homeImage = document.querySelector('.home__image img');
+        const homeScrollBox = document.querySelector('.home__scroll-box');
+        const homeDescription = document.querySelector('.home__description');
+        const homeSocialLinks = document.querySelectorAll('.home__social-link');
+      
+        // Animate Home Name
+        homeName.style.animation = 'fadeIn 1s ease-out forwards';
+        
+        // Animate Home Image
+        homeImage.style.animation = 'slideIn 1.5s ease-out forwards 0.5s';
+        
+        // Animate Home Description
+        homeDescription.style.animation = 'fadeIn 2s ease-out forwards 1s';
+      
+        // Animate Scroll Box
+        homeScrollBox.style.animation = 'fadeIn 2s ease-out forwards 1.5s';
+        
+        // Animate Social Links
+        homeSocialLinks.forEach((link, index) => {
+          link.style.animation = `rotateIn 1s ease-out forwards ${1.5 + index * 0.2}s`;
+        });
+      });
+      
+       
+
+
+
     // =========== EMAIL JS ============= 
 
 
