@@ -1314,6 +1314,13 @@ body.dark-theme {
     .contact__data .section__title-2 {
         transform: translate(0);
     }
+
+    .marquee-content {
+        list-style: none;
+        height: 60%;
+        display: flex;
+        animation: scrolling var(--marquee-animation-duration) linear infinite;
+      }
 }
 
 /* for medium devices */
